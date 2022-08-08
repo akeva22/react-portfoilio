@@ -6,18 +6,28 @@ import Work from './components/Work/Index';
 import Contact from './components/Contact';
 
 function App() {
-  const [isClicked, setIsClicked] = useState(false)
+  const [currentPage, setCurrentPage] = useState("About")
 
+
+  const displayPage = () => { 
+    if (currentPage === "About")
+      return <About />;
+
+      if (currentPage === "Work")
+      return <Work />;
+
+      if (currentPage === "Contact")
+      return <Contact />;
+  }
 
   return (
     <div>
-      <Nav
-        isClicked={isClicked}
-        setIsClicked={setIsClicked}></Nav>
+      <header>
+        <Nav setCurrentPage={setCurrentPage}></Nav>
+      </header>
+      <header/>
       <main>
-        <About></About>
-        {!isClicked  && <Work />} 
-        {!isClicked && <Contact />}
+        {displayPage()}
       </main>
       <footer>
         <p>

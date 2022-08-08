@@ -1,11 +1,9 @@
+import React from 'react';
 import Silver from '../../assets/Cover Image/silver-surfer.jpg'
 
 function Nav(props) {
 
-const { 
-    setIsClicked,
-    isClicked,
-} = props
+const {currentPage, setCurrentPage} = props
     
     return (
         <header className='flex-row px-1'>
@@ -18,18 +16,22 @@ const {
             <nav>
                 <ul className='flex-row'>
                     <li className='mx-2'>
-                        <a href='#about'> About </a>
+                        {/* <a href='#about' page> About </a> */}
+                        <span onClick={() => setCurrentPage("About")}> About </span>
+                    </li>
+                    <li className ='mx-2'>
+                        {/* <a href='#work'> Work </a> */}
+                        <span onClick={() => setCurrentPage("Work")}> Work </span>
                     </li>
                     <li className='mx-2'>
-                        <a href='#work' onClick={() => setIsClicked(!isClicked)}> Work </a>
-                    </li>
-                    <li className='mx-2'>
-                        <a href='#contact' onClick={() => setIsClicked(!isClicked)}> Contact </a>
+                        <span onClick={() => setCurrentPage("Contact")}> Contact </span>
                     </li>
                 </ul>
             </nav>
         </header>
     )
 }
+
+
 
 export default Nav;
