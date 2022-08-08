@@ -2,24 +2,22 @@ import React, { useState } from 'react'
 import './App.css';
 import About from './components/About/Index';
 import Nav from './components/Nav/index';
+import Work from './components/Work/Index';
+import Contact from './components/Contact';
 
 function App() {
-  const [categories] = useState([
-    { name: 'Menu' },
-    { name: 'Menu2' },
-  ]);
+  const [isClicked, setIsClicked] = useState(false)
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
     <div>
-       <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-      ></Nav>
+      <Nav
+        isClicked={isClicked}
+        setIsClicked={setIsClicked}></Nav>
       <main>
         <About></About>
+        {!isClicked  && <Work />} 
+        {!isClicked && <Contact />}
       </main>
       <footer>
         <p>
