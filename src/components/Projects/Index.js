@@ -5,30 +5,30 @@ function Projects() {
     const projects = [
         {
             name: 'catme', 
-            description: 'some shit',
+            description: 'Get a fact and pic of a cat!',
             link: 'https://github.com/akeva22/deep-thoughts'
 
         }, 
         {
             name: 'artist nation presslist',
-            description: 'some shit',
+            description: 'Presslist to organize data for Artist Nation',
             link:'https://github.com/sammylwolfson/artistnation-presslist'
         }, 
         {
             name: 'deep thoughts',
-            description: 'some shit',
+            description: 'API driven social media platform for your deepest darkest thoughts',
             link:'https://github.com/akeva22/deep-thoughts'
         }, 
 
         {
             name: 'weather dashboard',
-            description: 'a weather dashboard',
+            description: 'A weather dashboard',
             link:'https://github.com/akeva22/Daily-Weather'
         }, 
 
         {
             name: 'daily planner', 
-            description: 'plan your day, with color coded sceheduling', 
+            description: 'plan your day, with color coded scheduling', 
             link: 'https://github.com/akeva22/Daily-Planner'
         }, 
         { 
