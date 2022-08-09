@@ -7,23 +7,25 @@ const {currentPage, setCurrentPage} = props
     
     return (
         <header className='flex-row px-1'>
-             <img src={ Silver } className="my-2" style={{width:"100%"}} alt="cover" />
+             <img src={ Silver } style={{width:"100%"}} alt="cover" />
             <h2>
-                <a href="/">
-                    <span role="img" aria-label="camera"> 📸 </span> Oh Snap!
-                </a>
+
             </h2>
-            <nav>
-                <ul className='flex-row'>
-                    <li className='mx-2'>
+            <nav className="a">
+                <ul className='flex-row nav text-center'>
+                    <li className='mx-5 navbar-text'>
                         {/* <a href='#about' page> About </a> */}
                         <span onClick={() => setCurrentPage("About")}> About </span>
                     </li>
-                    <li className ='mx-2'>
+                    <li className ='mx-5 navbar-text'>
                         {/* <a href='#work'> Work </a> */}
-                        <span onClick={() => setCurrentPage("Work")}> Work </span>
+                        <span onClick={() => setCurrentPage("Work")}> Projects </span>
                     </li>
-                    <li className='mx-2'>
+                    <li className ='mx-5 navbar-text'>
+                        {/* <a href='#work'> Work </a> */}
+                        <span onClick={() => setCurrentPage("Resume")}> Resume </span>
+                    </li>
+                    <li className='mx-5 navbar-text'>
                         <span onClick={() => setCurrentPage("Contact")}> Contact </span>
                     </li>
                 </ul>
