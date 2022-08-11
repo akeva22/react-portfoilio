@@ -32,9 +32,9 @@ function Projects() {
             link: 'https://github.com/akeva22/Daily-Planner'
         }, 
         { 
-            name: 'readMe generator',
-            description: 'generate a read me with this repo!',
-            link:'https://github.com/akeva22/ReadMeGen'
+            name: 'Project Inventory Database(Deja IMP)',
+            description: 'Keep track of products and vendors with this handy database application!',
+            link:'https://github.com/edellenator/Deja-imp'
         }
     ] 
 
